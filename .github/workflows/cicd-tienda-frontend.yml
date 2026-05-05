@@ -9,7 +9,7 @@ on:
 env:
   AWS_REGION: ${{ secrets.AWS_REGION }}
   AWS_ACCOUNT_ID: ${{ secrets.AWS_ACCOUNT_ID }}
-  ECR_REPOSITORY: tienda-perritos-frontend
+  ECR_REPOSITORY: tienda-frontend
   ECS_CLUSTER: tienda-perritos-cluster
   ECS_SERVICE: tienda-perritos-frontend-service
   CONTAINER_NAME: frontend
