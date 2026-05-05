@@ -69,7 +69,7 @@ app.get("/api/productos/:id", async (req, res) => {
 
 // Crear un nuevo producto
 app.post("/api/productos", async (req, res) => {
-  const { nombre, descripcion, precio, stock } = req.body;
+  const { nombre, descripcion, precio,  stock } = req.body;
 
   if (!nombre || precio == null || stock == null) {
     return res.status(400).json({ message: "Nombre, precio y stock son obligatorios." });
