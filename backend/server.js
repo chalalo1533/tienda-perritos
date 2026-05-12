@@ -124,7 +124,7 @@ app.delete("/api/productos/:id", async (req, res) => {
     }
     res.json({ message: "Producto eliminado correctamente." });
   } catch (err) {
-    handleError(res, err, "No se pudo eliminar el Producto.");
+    handleError(res, err, "No se pudo eliminar el Producto..");
   }
 });
 
